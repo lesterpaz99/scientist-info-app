@@ -1,0 +1,60 @@
+.error404 {
+	inline-size: 100%;
+	block-size: 100vh;
+	background: rgb(8, 65, 75);
+	background: radial-gradient(
+		circle,
+		rgba(8, 65, 75, 1) 0%,
+		rgba(22, 36, 63, 1) 92%
+	);
+	display: grid;
+	place-content: center;
+	color: white;
+}
+
+.error404__container {
+	inline-size: 600px;
+	block-size: 350px;
+	display: grid;
+	place-items: center;
+
+	.description {
+		text-align: center;
+		display: grid;
+		gap: 1rem;
+	}
+
+	.description__title {
+		color: white;
+		font-size: 2.4rem;
+		word-spacing: 1px;
+		font-weight: 700;
+	}
+
+	p {
+		color: white;
+		opacity: 0.8;
+		font-weight: 400;
+		font-size: 1.8rem;
+	}
+
+	.logo-error {
+		font-size: 12rem;
+		font-weight: 700;
+	}
+
+	button {
+		inline-size: 129px;
+		block-size: 47px;
+		border-radius: 8.2rem;
+		font-size: 1.8rem;
+		background-color: #437778;
+		backdrop-filter: blur(12px);
+		border: 1px solid transparent;
+		color: white;
+		cursor: pointer;
+	}
+	button:hover {
+		box-shadow: 0 0 4px #437778, 0 0 8px #437778;
+	}
+}
