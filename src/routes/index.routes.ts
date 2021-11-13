@@ -1,4 +1,4 @@
-import Header from '../template/Header';
+import Header from '../components/Header';
 import Home from '../views/Home';
 import Characters from '../views/Characters';
 import NotFound from '../views/NotFound';

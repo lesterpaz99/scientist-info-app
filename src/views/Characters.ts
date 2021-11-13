@@ -10,18 +10,17 @@ const Characters = async (): Promise<string> => {
 
 	return `
 		<div class="character-inner">
-			<article class="character-card">
-				<img src="${image}" alt="${name}" />
+			<div class="character-info">
 				<h2>${name}</h2>
-			</article>
-			<article class="character-card">
-				<h3>Episodes: </h3>
-				<h3>Status: ${status}</h3>
 				<h3>Species: ${species}</h3>
+				<h3>Status: ${status}</h3>
 				<h3>Gender: ${gender}</h3>
 				<h3>Origin: ${origin.name}</h3>
 				<h3>Last location: ${location.name}</h3>
-			</article>
+			</div>
+			<div class="character-img">
+				<img src="${image}" alt="${name}" />
+			</div>
 		</div>
 	`;
 };
