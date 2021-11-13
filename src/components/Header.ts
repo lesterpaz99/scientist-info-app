@@ -1,6 +1,6 @@
 const Header = (): string => {
 	return `
-		<div class="main-header">
+		<header class="main-header">
 			<div class="header-logo">
 				<h1>
 					<a href="#/">Scientist100</a>
@@ -9,7 +9,7 @@ const Header = (): string => {
 			<div class="header-nav">
 				<a href="#/about">About</a>
 			</div>
-		</div>
+		</header>
 	`;
 };
 
