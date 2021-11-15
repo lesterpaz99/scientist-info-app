@@ -1,0 +1,21 @@
+@use './variables' as *;
+@forward './variables';
+
+.character-container {
+	background-color: $font-color;
+	color: black;
+	border-radius: 8px;
+
+	img {
+		border-radius: 8px;
+	}
+
+	a {
+		color: inherit;
+		text-decoration: none;
+		text-align: center;
+	}
+	a:hover {
+		text-decoration: underline;
+	}
+}
