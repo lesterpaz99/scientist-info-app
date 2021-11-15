@@ -4,7 +4,7 @@ const Header = (): string => {
 	return `
 			<div class="title-container">
 				<a>
-					<a href="/">Home</a>
+					<a href="#">Home</a>
 				</a>
 			</div>
 			<div class="logo-container">
