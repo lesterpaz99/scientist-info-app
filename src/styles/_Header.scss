@@ -21,8 +21,11 @@
 }
 
 .logo-container {
+	inline-size: 50%;
+	max-inline-size: 250px;
+
 	img {
-		inline-size: 250px;
+		inline-size: 100%;
 	}
 }
 
