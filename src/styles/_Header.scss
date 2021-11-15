@@ -1,7 +1,33 @@
-.main-header {
+@use './variables' as *;
+@forward './variables';
+
+.header {
 	background-color: transparent;
-	block-size: 10vh;
+	padding: 1rem;
 	position: absolute;
 	inset-inline: 0;
 	inset-block-start: 0;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	color: $font-color;
+
+	a {
+		text-decoration: none;
+		color: inherit;
+	}
+}
+
+.logo-container {
+	img {
+		inline-size: 250px;
+	}
+}
+
+.title-container a:hover {
+	text-decoration: underline;
+}
+
+.header-nav a:hover {
+	text-decoration: underline;
 }
