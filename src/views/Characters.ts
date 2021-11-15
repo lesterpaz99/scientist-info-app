@@ -9,16 +9,21 @@ const Characters = async (): Promise<string> => {
 		character;
 
 	return `
-		<div class="character-inner">
-			<div class="character-info">
-				<h2>${name}</h2>
-				<h3>Species: ${species}</h3>
-				<h3>Status: ${status}</h3>
-				<h3>Gender: ${gender}</h3>
-				<h3>Origin: ${origin.name}</h3>
-				<h3>Last location: ${location.name}</h3>
+		<div class="character">
+			<div class="character__info">
+				<div class="name-container">
+					<h2 class="character__name">${name}</h2>
+					<div></div>
+				</div>
+
+				<h3 class="details">Species: ${species}</h3>
+				<h3 class="details">Status: ${status}</h3>
+				<h3 class="details">Gender: ${gender}</h3>
+				
+				<h3 class="second-details"><span>Origin</span>: ${origin.name}</h3>
+				<h3 class="second-details"><span>Last location</span>: ${location.name}</h3>
 			</div>
-			<div class="character-img">
+			<div class="character__img">
 				<img src="${image}" alt="${name}" />
 			</div>
 		</div>

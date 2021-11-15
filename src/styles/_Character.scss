@@ -1,0 +1,60 @@
+@use './variables' as *;
+@forward './variables';
+
+.character {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+	inline-size: 100%;
+	padding-block-start: 8rem;
+	block-size: calc(100vh - 8rem);
+	color: $font-color;
+	padding-inline: 2rem;
+
+	&__info {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
+
+	.name-container {
+		display: flex;
+		align-items: center;
+		vertical-align: middle;
+		gap: 1rem;
+	}
+
+	&__img img {
+		border-radius: 8px;
+	}
+}
+
+.character__name {
+	font-size: 3.2rem;
+	text-transform: uppercase;
+}
+
+.details {
+	padding: 1.2rem;
+	background-color: $secondary-color;
+	inline-size: 165px;
+	text-align: center;
+	border-radius: 4px;
+}
+
+.second-details span {
+	text-shadow: 0 0 2px white;
+}
+
+.character__name ~ div {
+	inline-size: 6rem;
+	block-size: 4px;
+	background-color: $secondary-color;
+}
+
+@media screen and (max-width: 740px) {
+	.character__info {
+		align-items: center;
+	}
+}
