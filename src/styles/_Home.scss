@@ -5,6 +5,7 @@
 	background-color: $font-color;
 	color: black;
 	border-radius: 8px;
+	transition: 0.3s ease-in transform;
 
 	img {
 		border-radius: 8px;
@@ -18,4 +19,9 @@
 	a:hover {
 		text-decoration: underline;
 	}
+}
+
+.character-container:hover {
+	transition: 0.3s ease-out transform;
+	transform: scale(1.1);
 }
