@@ -8,12 +8,11 @@ const NotFound = (): string => {
         </div>
         <h3 class="logo-error">404</h3>
         <button>
-          <a href="/">
+          <a href="#">
             Go back
           </a>
         </button>
       </div>
-    </div>
   `;
 };
 
