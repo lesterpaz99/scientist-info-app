@@ -32,6 +32,12 @@ const router = async (): Promise<any> => {
 	if (content) {
 		content.innerHTML = await render();
 	}
+
+	if (location.hash === '' || location.hash === '#') {
+		content?.classList.add('content-home');
+	} else {
+		content?.classList.remove('content-home');
+	}
 };
 
 export default router;
